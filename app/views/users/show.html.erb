@@ -1,0 +1,12 @@
+<%= link_to "Home", root_path %>
+<h1>Hello, <%= @user.firstname %></h1>
+<h2>Here is your params:</h2>
+<%= @user.firstname %>  <%= @user.lastname %> (<%= @user.gender %>) - <%= @user.age %> років<br/>
+Країна : <%= @user.country %><br/>
+Місто : <%= @user.city %><br/>
+Вулиця : <%= @user.apt %><br/>
+Номер телефону : <%= @user.phone %><br/>
+E-mail : <%= @user.email %><br/>
+Link : <%= @user.link %><br/>
+<br/>
+<h2><%=  link_to "Edit", edit_user_path %> or <%= link_to "Exit", user_path(@user.id), method: :delete %></h2>
