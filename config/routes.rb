@@ -2,6 +2,11 @@ Rails.application.routes.draw do
   root to: 'pages#index'
 
   resources :users 
+  
+  
+  
+  
+  
 
   get '/login', to: 'users#login'
   post '/loginresult', to: 'users#loginresult'

@@ -12,7 +12,7 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.string :street
       t.string :apt
       t.string :link
-      t.string :gander
+      t.string :gender
 
       t.timestamps
     end
